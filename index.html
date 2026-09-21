@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pedro Simangunsong</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Pedro Simangunsong</h1>
+        <p>Mahasiswa Sistem Informasi</p>
+    </header>
+
+    <nav>
+        <a href="#tentang">Tentang Saya</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#layanan">Layanan</a>
+    </nav>
+
+    <main>
+
+        <section id="tentang">
+
+    <div class="profile-image">
+    <img src="images/profil.jpeg"
+         alt="Foto profil Pedro Simangunsong">
+</div>
+
+        <div class="profile-info">
+
+            <p class="profile-label">
+                MAHASISWA SISTEM INFORMASI
+            </p>
+
+            <h2>Pedro Simangunsong</h2>
+
+            <p>
+                Halo! Saya Pedro Simangunsong, mahasiswa Sistem Informasi
+                yang memiliki ketertarikan pada teknologi, pengembangan web,
+                analisis sistem, dan perancangan aplikasi.
+            </p>
+
+            <p>
+                Saya senang mempelajari teknologi baru dan mengembangkan
+                berbagai proyek sebagai bagian dari proses pembelajaran
+                di bidang Sistem Informasi.
+            </p>
+
+            <div class="profile-details">
+                <span>🎓 Institut Teknologi Del</span>
+                <span>💻 Sistem Informasi</span>
+                <span>📍 Sumatera Utara</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <section id="portofolio">
+    <h2>Portofolio Karya</h2>
+
+    <p>
+        Berikut beberapa proyek dan kegiatan yang pernah saya kerjakan.
+    </p>
+
+    <table>
+        <caption>Daftar Proyek dan Kegiatan Akademik</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">Nama Proyek</th>
+                <th scope="col">Mata Kuliah</th>
+                <th scope="col">Tahun</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Sistem Konseling Mahasiswa</td>
+                <td>Analisis dan Perancangan Sistem</td>
+                <td>2026</td>
+            </tr>
+
+            <tr>
+                <th scope="row">2</th>
+                <td>CendraMatak</td>
+                <td>Perancangan Produk Digital</td>
+                <td>2026</td>
+            </tr>
+
+            <tr>
+                <th scope="row">3</th>
+                <td>Website Portfolio</td>
+                <td>Pemrograman dan Pengujian Aplikasi Web</td>
+                <td>2026</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="3">Total Proyek</th>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+<section id="skills">
+    <h2>Keahlian</h2>
+
+    <h3>Skills yang Saya Kuasai</h3>
+
+    <ul class="skill-list">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>Java</li>
+    <li>SQL</li>
+    <li>Git dan GitHub</li>
+</ul>
+
+    <h3>Urutan Pengembangan Project</h3>
+
+    <ol>
+        <li>Analisis kebutuhan</li>
+        <li>Perancangan sistem</li>
+        <li>Implementasi</li>
+        <li>Pengujian</li>
+        <li>Deployment</li>
+    </ol>
+</section>
+
+<section id="layanan">
+    <h2>Formulir Layanan</h2>
+
+    <p>
+        Silakan isi formulir berikut untuk menghubungi saya
+        atau melakukan konsultasi mengenai proyek dan teknologi.
+    </p>
+
+    <form>
+
+        <fieldset>
+            <legend>Informasi Pribadi</legend>
+
+            <p>
+                <label for="nama">Nama Lengkap</label><br>
+                <input type="text" id="nama" name="nama" required>
+            </p>
+
+            <p>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="telepon">Nomor Telepon</label><br>
+                <input
+                    type="tel"
+                    id="telepon"
+                    name="telepon"
+                    pattern="[0-9]{10,13}"
+                    aria-describedby="format-telepon"
+                    required
+                >
+                <small id="format-telepon">
+                    Masukkan 10–13 digit nomor telepon.
+                </small>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detail Layanan</legend>
+
+            <p>
+                <label for="jumlah">Jumlah Pertemuan</label><br>
+                <input
+                    type="number"
+                    id="jumlah"
+                    name="jumlah"
+                    min="1"
+                    max="10"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="layanan-pilihan">Jenis Layanan</label><br>
+                <select id="layanan-pilihan" name="layanan-pilihan" required>
+                    <option value="">-- Pilih Layanan --</option>
+                    <option value="konsultasi-web">Konsultasi Web</option>
+                    <option value="konsultasi-sistem">Konsultasi Sistem</option>
+                    <option value="diskusi-proyek">Diskusi Proyek</option>
+                </select>
+            </p>
+
+            <p>
+                <span>Metode Konsultasi</span><br>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="metode"
+                        value="online"
+                        required
+                    >
+                    Online
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="metode"
+                        value="offline"
+                    >
+                    Offline
+                </label>
+            </p>
+
+            <p>
+                <span>Topik yang Diminati</span><br>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="topik"
+                        value="html-css"
+                    >
+                    HTML & CSS
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="topik"
+                        value="database"
+                    >
+                    Database
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="topik"
+                        value="sistem"
+                    >
+                    Analisis Sistem
+                </label>
+            </p>
+
+            <p>
+                <label for="pesan">Pesan atau Kebutuhan</label><br>
+                <textarea
+                    id="pesan"
+                    name="pesan"
+                    rows="5"
+                    required
+                ></textarea>
+            </p>
+        </fieldset>
+
+        <button type="submit">Kirim Formulir</button>
+
+    </form>
+</section>
+
+        <aside>
+            <h2>Informasi Tambahan</h2>
+
+            <p>
+                Terbuka untuk diskusi mengenai teknologi dan pengembangan web.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pedro Simangunsong. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
