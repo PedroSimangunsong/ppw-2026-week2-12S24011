@@ -1,3 +1,15 @@
+:root {
+    --primary-brand: #0284c7;
+    --primary-hover: #0369a1;
+    --body-bg: #f4f7fb;
+    --surface-bg: #ffffff;
+    --text-dark: #0f172a;
+    --text-muted: #64748b;
+    --card-radius: 16px;
+    --shadow-card: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
 /* ==============================
    RESET & DASAR
    ============================== */
@@ -10,9 +22,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f7fb;
-    color: #1e293b;
+    background-color: var(--body-bg);
+    color: var(--text-dark);
 }
 
 /* ============================== 
@@ -20,7 +31,7 @@ body {
    ============================== */
 
 header {
-    background: linear-gradient(135deg, #0f172a, #0369a1);
+     background: linear-gradient(135deg, var(--text-dark), var(--primary-hover));
     color: white;
     text-align: center;
     padding: 70px 20px;
@@ -37,31 +48,6 @@ header p {
     opacity: 0.9;
 } 
 
-/* ==============================
-   NAVIGATION
-   ============================== */
-
-nav {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-nav a {
-    text-decoration: none;
-    color: #0f172a;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #0284c7;
-}
 
 /* ==============================
    MAIN
@@ -75,11 +61,11 @@ main {
 
 section,
 aside {
-    background-color: white;
+    background-color: var(--surface-bg);
     margin-bottom: 30px;
     padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-card);
 }
 
 h2 {
