@@ -366,3 +366,160 @@ footer {
         justify-content: center;
     }
 }
+
+/* ==============================
+   TENTANG SAYA - BOOTSTRAP
+   ============================== */
+
+#tentang .row {
+    display: flex;
+    align-items: center;
+}
+
+#tentang .col-md-4 {
+    text-align: center;
+}
+
+#tentang .col-md-4 img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--shadow-card);
+}
+
+#tentang .col-md-8 {
+    padding-left: 30px;
+}
+
+@media (max-width: 767px) {
+    #tentang .col-md-8 {
+        padding-left: 0;
+        margin-top: 25px;
+        text-align: center;
+    }
+}
+
+```css
+/* ==============================
+   BOOTSTRAP CUSTOM OVERRIDES
+   ============================== */
+
+/* Warna tombol utama */
+.btn-primary {
+    background-color: var(--primary-brand);
+    border-color: var(--primary-brand);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==============================
+   PORTFOLIO CARD
+   ============================== */
+
+#portofolio .card {
+    border: none;
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-card);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+#portofolio .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+#portofolio .card-title {
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+#portofolio .card-text {
+    color: var(--text-muted);
+}
+
+
+/* ==============================
+   BADGE
+   ============================== */
+
+#portofolio .badge {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+}
+
+
+/* ==============================
+   FORM
+   ============================== */
+
+#layanan fieldset {
+    border: 1px solid #e2e8f0;
+    border-radius: var(--card-radius);
+    padding: 25px;
+    background-color: var(--surface-bg);
+}
+
+#layanan legend {
+    color: var(--primary-brand);
+    font-weight: bold;
+}
+
+
+/* Input ketika mendapatkan fokus */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-brand);
+    box-shadow: 0 0 0 0.2rem rgba(2, 132, 199, 0.15);
+}
+
+
+/* ==============================
+   ABOUT / PROFIL
+   ============================== */
+
+#tentang {
+    background-color: var(--surface-bg);
+}
+
+#tentang img {
+    max-width: 240px;
+    border: 6px solid #e0f2fe;
+    box-shadow: var(--shadow-card);
+}
+
+
+/* ==============================
+   SECTION SPACING
+   ============================== */
+
+section {
+    scroll-margin-top: 80px;
+}
+
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 767px) {
+
+    #tentang img {
+        max-width: 180px;
+        margin-bottom: 20px;
+    }
+
+    #portofolio .card {
+        margin-bottom: 10px;
+    }
+
+}
+```
