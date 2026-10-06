@@ -92,28 +92,31 @@
             </div>
 
             <!-- Informasi -->
-            <div class="col-md-8">
-                <p class="text-primary fw-bold">TENTANG SAYA</p>
+           <div class="col-md-8">
+    <p class="text-primary fw-bold">TENTANG SAYA</p>
 
-                <h2>Pedro Simangunsong</h2>
+    <h2 id="profileName">Nama</h2>
 
-                <h3>Mahasiswa Sistem Informasi</h3>
+    <h3 id="profileTitle">Profesi</h3>
 
-                <p>
-                    Halo, saya Pedro Simangunsong, mahasiswa Sistem Informasi
-                    yang memiliki ketertarikan pada teknologi, pengembangan web,
-                    dan perancangan sistem.
-                </p>
+    <p id="profileDescription">
+        Memuat data profil...
+    </p>
 
-                <div>
-                    <span class="badge text-bg-light">Institut Teknologi Del</span>
-                    <span class="badge text-bg-light">HTML5</span>
-                    <span class="badge text-bg-light">CSS3</span>
-                    <span class="badge text-bg-light">Java</span>
-                    <span class="badge text-bg-light">SQL</span>
-                    <span class="badge text-bg-light">Git & GitHub</span>
-                </div>
-            </div>
+    <div>
+        <span
+            id="profileInstitution"
+            class="badge text-bg-light">
+            Memuat...
+        </span>
+
+        <span class="badge text-bg-light">HTML5</span>
+        <span class="badge text-bg-light">CSS3</span>
+        <span class="badge text-bg-light">Java</span>
+        <span class="badge text-bg-light">SQL</span>
+        <span class="badge text-bg-light">Git & GitHub</span>
+    </div>
+</div>
 
         </div>
     </div>
@@ -129,270 +132,69 @@
             Berikut beberapa proyek dan kegiatan yang pernah saya kerjakan.
         </p>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <section id="portofolio" class="py-5">
+    <div class="container">
 
-            <!-- Project 1 -->
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge text-bg-primary mb-2">
-                            Analisis Sistem
-                        </span>
+        <h2 class="mb-3">Portofolio Karya</h2>
 
-                        <h5 class="card-title">
-                            Sistem Konseling Mahasiswa
-                        </h5>
+        <p class="mb-4">
+            Berikut beberapa proyek dan kegiatan yang pernah saya kerjakan.
+        </p>
 
-                        <p class="card-text">
-                            Perancangan sistem konseling mahasiswa untuk
-                            membantu proses konsultasi dan pengelolaan data.
-                        </p>
+        <div class="mb-4">
+            <label for="categoryFilter" class="form-label fw-bold">
+               Filter Kategori
+            </label>
 
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalKonseling">
-                            Lihat Detail
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <select id="categoryFilter" class="form-select">
+              <option value="all">Semua Kategori</option>
+              <option value="Analisis Sistem">Analisis Sistem</option>
+              <option value="Perancangan Produk Digital">Perancangan Produk Digital</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Database">Database</option>
+              <option value="Mobile Development">Mobile Development</option>
+          
+          </select>
+      </div>
 
-            <!-- Project 2 -->
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge text-bg-success mb-2">
-                            Produk Digital
-                        </span>
+      <div
+    class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+    id="projectContainer">
 
-                        <h5 class="card-title">
-                            CendraMatak
-                        </h5>
-
-                        <p class="card-text">
-                            Konsep produk digital yang mengangkat
-                            cenderamata dan budaya Batak.
-                        </p>
-
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalCendra">
-                            Lihat Detail
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge text-bg-warning mb-2">
-                            Web Development
-                        </span>
-
-                        <h5 class="card-title">
-                            Website Portfolio
-                        </h5>
-
-                        <p class="card-text">
-                            Website portfolio pribadi menggunakan HTML,
-                            CSS, dan Bootstrap.
-                        </p>
-
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalPortfolio">
-                            Lihat Detail
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge text-bg-info mb-2">
-                            Database
-                        </span>
-
-                        <h5 class="card-title">
-                            Database Project
-                        </h5>
-
-                        <p class="card-text">
-                            Implementasi database menggunakan SQL untuk
-                            pengelolaan dan pengolahan data.
-                        </p>
-
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalDatabase">
-                            Lihat Detail
-                        </button>
-                    </div>
-                </div>
-            </div>
-
+    <div class="col-12 text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
         </div>
+
+        <p class="mt-3 text-muted">
+            Memuat proyek...
+        </p>
+    </div>
+
+</div>
     </div>
 </section>
 
+<!-- Universal Dynamic Modal -->
+<div class="modal fade" id="universalProjectModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
 
-<!-- Modal Sistem Konseling -->
-<div class="modal fade" id="modalKonseling" tabindex="-1"
-    aria-labelledby="modalKonselingLabel" aria-hidden="true">
-
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalKonselingLabel">
-                    Sistem Konseling Mahasiswa
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold" id="projectModalTitle">
+                    Detail Proyek
                 </h5>
 
-                <button type="button"
-                    class="btn-close"
+                <button
+                    type="button"
+                    class="btn-close btn-close-white"
                     data-bs-dismiss="modal"
                     aria-label="Close">
                 </button>
             </div>
 
-            <div class="modal-body">
-                Proyek ini berfokus pada perancangan sistem konseling
-                mahasiswa untuk membantu mahasiswa melakukan konsultasi
-                dan mempermudah pengelolaan layanan konseling.
-            </div>
-
-            <div class="modal-footer">
-                <button type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal">
-                    Tutup
-                </button>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- Modal CendraMatak -->
-<div class="modal fade" id="modalCendra" tabindex="-1"
-    aria-labelledby="modalCendraLabel" aria-hidden="true">
-
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalCendraLabel">
-                    CendraMatak
-                </h5>
-
-                <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close">
-                </button>
-            </div>
-
-            <div class="modal-body">
-                CendraMatak merupakan konsep produk digital yang
-                mengangkat cenderamata dan budaya Batak sebagai
-                bagian dari pengalaman pengguna.
-            </div>
-
-            <div class="modal-footer">
-                <button type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal">
-                    Tutup
-                </button>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- Modal Website Portfolio -->
-<div class="modal fade" id="modalPortfolio" tabindex="-1"
-    aria-labelledby="modalPortfolioLabel" aria-hidden="true">
-
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalPortfolioLabel">
-                    Website Portfolio
-                </h5>
-
-                <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close">
-                </button>
-            </div>
-
-            <div class="modal-body">
-                Website portfolio ini dikembangkan menggunakan HTML5,
-                CSS3, dan Bootstrap 5 sebagai bagian dari praktikum
-                Pemrograman dan Pengujian Aplikasi Web.
-            </div>
-
-            <div class="modal-footer">
-                <button type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal">
-                    Tutup
-                </button>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- Modal Database -->
-<div class="modal fade" id="modalDatabase" tabindex="-1"
-    aria-labelledby="modalDatabaseLabel" aria-hidden="true">
-
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalDatabaseLabel">
-                    Database Project
-                </h5>
-
-                <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close">
-                </button>
-            </div>
-
-            <div class="modal-body">
-                Proyek database berfokus pada penggunaan SQL untuk
-                membuat, mengelola, dan mengolah data dalam sistem
-                basis data.
-            </div>
-
-            <div class="modal-footer">
-                <button type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal">
-                    Tutup
-                </button>
+            <div class="modal-body p-4" id="projectModalBody">
+                <!-- Detail proyek akan dimasukkan oleh JavaScript -->
             </div>
 
         </div>
@@ -513,7 +315,7 @@
             atau melakukan konsultasi mengenai proyek dan teknologi.
         </p>
 
-        <form class="needs-validation" novalidate>
+      <form id="contactForm" class="needs-validation" novalidate>
 
             <!-- Informasi Pribadi -->
             <fieldset class="mb-4">
@@ -676,10 +478,7 @@
             required
         >
             <option value="">-- Pilih Layanan --</option>
-            <option value="konsultasi-web">Konsultasi Web</option>
-            <option value="konsultasi-sistem">Konsultasi Sistem</option>
-            <option value="diskusi-proyek">Diskusi Proyek</option>
-        </select>
+            </select>
 
         <label for="layanan-pilihan">
             Jenis Layanan *
@@ -877,7 +676,7 @@
 
 
 
-        ```html
+        
 <!-- Informasi Tambahan -->
 <aside class="py-5">
     <div class="container">
@@ -915,13 +714,37 @@
     </div>
 </footer>
 
+<!-- Toast Notification -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div
+        id="successToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true">
+
+        <div class="toast-header">
+            <strong class="me-auto text-success">
+                Berhasil
+            </strong>
+
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="toast"
+                aria-label="Close">
+            </button>
+        </div>
+
+        <div class="toast-body">
+            Form berhasil dikirim!
+        </div>
+
+    </div>
+</div>
 
 
-<!-- Bootstrap JavaScript -->
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
- 
+
 
 <!-- Bootstrap JavaScript -->
 <script
@@ -950,9 +773,8 @@
     })();
 </script>
 
-</body>
-
-</html>
+<script src="js/api-service.js"></script>
+<script src="js/app.js"></script>
 
 
 

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Sistem Konseling Mahasiswa",
+    "category": "Analisis Sistem",
+    "description": "Perancangan sistem untuk membantu proses konseling mahasiswa secara lebih terstruktur.",
+    "metrics": "BPMN, UML, Figma",
+    "tags": ["BPMN", "UML", "Figma"],
+    "image": "images/project-konseling.png",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "title": "CendraMatak",
+    "category": "Perancangan Produk Digital",
+    "description": "Perancangan produk digital untuk memperkenalkan dan memasarkan cenderamata khas Batak.",
+    "metrics": "BMC, UI/UX, Figma",
+    "tags": ["UI/UX", "Figma", "BMC"],
+    "image": "images/project-cendramatak.png",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "title": "Website Portfolio",
+    "category": "Web Development",
+    "description": "Website portfolio pribadi yang dikembangkan menggunakan HTML, CSS, Bootstrap, dan JavaScript.",
+    "metrics": "HTML, CSS, Bootstrap",
+    "tags": ["HTML", "CSS", "Bootstrap"],
+    "image": "images/project-website.png",
+    "link": "https://github.com/PedroSimangunsong/ppw-2026-week2-12S24011"
+  },
+  {
+    "id": 4,
+    "title": "Database Project",
+    "category": "Database",
+    "description": "Proyek pembelajaran database yang mencakup perancangan dan pengelolaan data.",
+    "metrics": "SQL, Database",
+    "tags": ["SQL", "Database"],
+    "image": "images/project-database.png",
+    "link": "#"
+  }
+]

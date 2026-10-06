@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Analisis Sistem",
+    "description": "Membantu dalam analisis kebutuhan dan perancangan sistem informasi.",
+    "icon": "bi-diagram-3"
+  },
+  {
+    "id": 2,
+    "name": "UI/UX Design",
+    "description": "Perancangan tampilan dan pengalaman pengguna menggunakan pendekatan UI/UX.",
+    "icon": "bi-palette"
+  },
+  {
+    "id": 3,
+    "name": "Web Development",
+    "description": "Pengembangan website menggunakan HTML, CSS, Bootstrap, dan JavaScript.",
+    "icon": "bi-code-slash"
+  }
+]
